@@ -9,14 +9,14 @@ As is often the case with X, the data scheme changes without notice so there is 
 ## How to use
 
 1. open browser tab on PC
-2. press F12 and open developer console
+2. press F12 to open developer console
 3. in the Filter form under Network tab, type "userTweets" (without quotes)
 4. move to someone's X home in the same browser tab
    e.g. https://x.com/elonmusk
 5. click one entry that starts with userTweets that appeared in Name section  
 6. move to Response tab
 7. copy the text and save as userTweet.json on your local directory
-9. execute repost_detector.py on the same directory
+9. run repost_detector.py on the same directory
 
 EXAMPLE
 
