@@ -30,12 +30,12 @@ for o5 in o4:
       print(o7["legacy"]["id_str"], end=",")
       print(o7["legacy"]["created_at"])
       res_list.append([
-        datetime.strptime(o6["legacy"]["created_at"], "%a %b %d %H:%M:%S %z %Y").isoformat(),
+        datetime.strptime(o6["legacy"]["created_at"], "%a %b %d %H:%M:%S %z %Y").astimezone().isoformat(),
         "https://x.com/"
           + o6["core"]["user_results"]["result"]["legacy"]["screen_name"]
           + "/status/"
           + o6["legacy"]["id_str"],
-        datetime.strptime(o7["legacy"]["created_at"], "%a %b %d %H:%M:%S %z %Y").isoformat(),
+        datetime.strptime(o7["legacy"]["created_at"], "%a %b %d %H:%M:%S %z %Y").astimezone().isoformat(),
         "https://x.com/"
           + o7["core"]["user_results"]["result"]["legacy"]["screen_name"]
           + "/status/"
