@@ -4,7 +4,7 @@ import csv
 from datetime import datetime
 
 o = dict()
-with open("./userTweets.json", "r", encoding="utf-8") as f:
+with open("./userTweet.json", "r", encoding="utf-8") as f:
   o = json.loads(f.read())
   
 o2 = o["data"]["user"]["result"]["timeline_v2"]["timeline"]
